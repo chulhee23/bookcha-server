@@ -1,0 +1,9 @@
+type FullBook {
+  book: Book!
+  myReview: Review
+  reviews: [Review!]
+}
+
+type Query {
+  seeFullBook(id: String!): FullBook!
+}
